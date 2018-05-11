@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+dialog{
+ width:500px;
+ background-color: #e8e8e8;
+ boder:1px solid #dadada;
+ font-family: sans-serif;
+ padding: 5px 10px 20px 20px;
+}
+</style>
+<script>
+function showDialog(){
+var dialog =  document.getElementById('contactD');
+    btnShow = document.getElementById('show').onclick=function(){
+	dialog.show();
+	
+	};
+	document.getElementById('exit').onclick=function(){
+	dialog.close();
+	};
+	}
+</script>
+</head>
+<body>
+<dialog id='contactD'>
+<h3>how do you want to get us?</h3>
+<p>facebbok</p>
+<p>tweeter</p>
+<p>gmail</p>
+<button id='exit' name="exit">close dialog </button>
+</dialog>
+<button id='show' onclick="showDialog()"  name="show"> show dialog </button>
+</body>
+</html>
